@@ -173,6 +173,41 @@ body {
 }
 .spin-slow { animation: spin-slow 28s linear infinite; }
 
+/* hero vortex whirl */
+@media (prefers-reduced-motion: no-preference) {
+  .whirl-img {
+    animation: whirl-sway 16s ease-in-out infinite alternate;
+  }
+  .whirl-sweep {
+    animation: whirl-sweep 26s linear infinite;
+  }
+}
+.whirl-img {
+  transform-origin: 76% 46%;
+  will-change: transform;
+}
+@keyframes whirl-sway {
+  from { transform: scale(1.12) rotate(-2.2deg); }
+  to { transform: scale(1.12) rotate(2.2deg); }
+}
+.whirl-sweep {
+  background: conic-gradient(
+    from 0deg at 76% 46%,
+    transparent 0deg,
+    rgba(255, 255, 255, 0.055) 55deg,
+    transparent 110deg,
+    transparent 180deg,
+    rgba(255, 255, 255, 0.035) 240deg,
+    transparent 300deg
+  );
+  mix-blend-mode: screen;
+  transform-origin: 76% 46%;
+  will-change: transform;
+}
+@keyframes whirl-sweep {
+  to { transform: rotate(-360deg); }
+}
+
 /* scrollbar */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--abyss); }

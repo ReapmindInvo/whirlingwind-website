@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -23,26 +24,27 @@ export default function Hero() {
       ref={ref}
       className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden pt-24"
     >
+      {/* whirling vortex heart — hero visual */}
+      <motion.div style={{ opacity }} className="absolute inset-0 overflow-hidden" aria-hidden>
+        <Image
+          src="/images/hero-vortex.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="whirl-img object-cover object-[78%_center] opacity-60 lg:object-[85%_center]"
+        />
+        <div className="whirl-sweep absolute inset-0" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#030b12_0%,#030b12_32%,rgba(3,11,18,0.72)_54%,rgba(3,11,18,0.25)_72%,transparent_88%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-abyss to-transparent" />
+      </motion.div>
+
       {/* atmosphere */}
       <div className="halo absolute inset-0" />
       <div className="grid-lines absolute inset-0" />
       <motion.div style={{ y: yOrbs }} className="absolute inset-0">
         <div className="float-slow absolute left-[8%] top-[18%] h-72 w-72 rounded-full bg-teal-deep/20 blur-[100px]" />
         <div className="float-slow absolute right-[6%] top-[45%] h-96 w-96 rounded-full bg-emerald/15 blur-[120px] [animation-delay:-4s]" />
-      </motion.div>
-
-      {/* rotating W mark watermark */}
-      <motion.div
-        style={{ opacity }}
-        className="pointer-events-none absolute right-[-8%] top-[12%] hidden select-none lg:block"
-        aria-hidden
-      >
-        <div className="spin-slow h-[520px] w-[520px] rounded-full border border-[var(--line)]" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="stroke-text font-display text-[26rem] font-extrabold leading-none">
-            W
-          </span>
-        </div>
       </motion.div>
 
       <motion.div

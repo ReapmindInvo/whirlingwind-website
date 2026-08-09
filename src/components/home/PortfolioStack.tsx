@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 import { brands } from "@/lib/site";
 
@@ -19,7 +20,7 @@ function BrandCard({ index, total }: { index: number; total: number }) {
     <div
       ref={ref}
       className="sticky"
-      style={{ top: `calc(96px + ${index * 26}px)`, zIndex: index + 1 }}
+      style={{ top: "96px", zIndex: index + 1 }}
     >
       <motion.article
         style={{ scale, rotate }}
@@ -29,6 +30,18 @@ function BrandCard({ index, total }: { index: number; total: number }) {
           className="h-1 w-full"
           style={{ background: `linear-gradient(90deg, ${brand.accent}, transparent 70%)` }}
         />
+        {brand.image && (
+          <div className="relative h-48 w-full overflow-hidden md:h-60">
+            <Image
+              src={brand.image}
+              alt={brand.imageAlt ?? brand.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 1152px"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#081521]" />
+          </div>
+        )}
         <div className="grid gap-8 p-7 md:grid-cols-[1.3fr_1fr] md:p-12">
           <div>
             <div className="flex items-center gap-3">

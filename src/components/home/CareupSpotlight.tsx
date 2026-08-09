@@ -24,6 +24,19 @@ export default function CareupSpotlight() {
           "radial-gradient(900px 500px at 80% 20%, rgba(255,255,255,0.07), transparent 60%), linear-gradient(180deg, #061318, #07090d 60%, #061318)",
       }}
     >
+      {/* ambient hospital imagery */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
+        <Image
+          src="/images/careup-ward.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-[0.16]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#061318] via-[#061318]/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#061318] via-transparent to-[#061318]" />
+      </div>
+
       <motion.div style={{ y }} className="pointer-events-none absolute -right-24 top-10 opacity-[0.07]" aria-hidden>
         <span className="font-display text-[20rem] font-extrabold leading-none text-emerald">up</span>
       </motion.div>

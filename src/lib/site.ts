@@ -36,6 +36,8 @@ export type Brand = {
   points: string[];
   metrics: { value: string; label: string }[];
   logo?: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 export const brands: Brand[] = [
@@ -60,6 +62,8 @@ export const brands: Brand[] = [
       { value: "4.8★", label: "app store rating" },
     ],
     logo: "/brand/vkonnect.svg",
+    image: "/images/vkonnect.jpg",
+    imageAlt: "Doctor using a medical knowledge app on a smartphone in a dark clinic",
   },
   {
     slug: "mulkmed",
@@ -82,6 +86,8 @@ export const brands: Brand[] = [
       { value: "40%", label: "faster clinical decisions" },
     ],
     logo: "/brand/mulkmed.png",
+    image: "/images/mulkmed.jpg",
+    imageAlt: "Elderly patient in a telemedicine video consultation at night",
   },
   {
     slug: "elif-healthcare",
@@ -103,6 +109,8 @@ export const brands: Brand[] = [
       { value: "25+", label: "sectors served" },
       { value: "4", label: "clinic locations" },
     ],
+    image: "/images/elif.jpg",
+    imageAlt: "Calm one-on-one counselling session by soft window light",
   },
   {
     slug: "hb-check-camps",
@@ -124,6 +132,8 @@ export const brands: Brand[] = [
       { value: "AWS", label: "secure cloud records" },
       { value: "Pan-India", label: "camp coverage" },
     ],
+    image: "/images/hbcheck.jpg",
+    imageAlt: "Healthcare worker testing a patient with a handheld hemoglobin device at a field camp",
   },
 ];
 
