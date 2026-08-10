@@ -67,6 +67,7 @@ export default function CareupPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <PageHero
+        image="/images/careup-ward.jpg"
         kicker="Product Portfolio"
         title={
           <>

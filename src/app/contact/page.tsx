@@ -15,6 +15,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
+        image="/images/world-connections.jpg"
         kicker="Contact"
         title={
           <>

@@ -60,7 +60,20 @@ export default function PortfolioPage() {
                       ))}
                     </ul>
                   </div>
-                  <div className="grid grid-cols-2 gap-5 lg:sticky lg:top-32">
+                  <div className="lg:sticky lg:top-32">
+                    {b.image && (
+                      <div className="relative mb-5 aspect-[3/2] overflow-hidden rounded-3xl border border-[var(--line)]">
+                        <Image
+                          src={b.image}
+                          alt={b.imageAlt ?? b.name}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 560px"
+                          className="object-cover object-center transition-transform duration-700 hover:scale-[1.04]"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#081521]/45 to-transparent" />
+                      </div>
+                    )}
+                    <div className="grid grid-cols-2 gap-5">
                     {b.metrics.map((m) => (
                       <div key={m.label} className="card rounded-3xl p-7">
                         <p className="font-display text-3xl font-bold" style={{ color: b.accent }}>
@@ -71,6 +84,7 @@ export default function PortfolioPage() {
                         </p>
                       </div>
                     ))}
+                    </div>
                   </div>
                 </div>
               </Reveal>

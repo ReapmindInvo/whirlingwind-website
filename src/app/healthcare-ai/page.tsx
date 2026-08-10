@@ -65,6 +65,7 @@ export default function HealthcareAiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
       <PageHero
+        image="/images/ai-brain.jpg"
         kicker="Healthcare AI Services"
         title={
           <>

@@ -206,16 +206,22 @@ export const iotDevices = [
     title: "Patient Kiosks & Health ATMs",
     body: "Self-service health kiosks measuring vitals in minutes — BP, SpO2, BMI, glucose, ECG and more — with instant digital reports, ABHA linking and teleconsultation escalation. Built for hospital lobbies, corporates and rural PHCs.",
     specs: ["40+ health parameters", "ABHA-linked reports", "Teleconsult escalation", "Rugged, field-serviceable build"],
+    image: "/images/iot-kiosk.jpg",
+    imageAlt: "White health kiosk with glowing screen in a dark hospital lobby",
   },
   {
     title: "Smart Medicine Dispensers",
     body: "IoT-enabled automated dispensing — prescription-verified vending, cold-chain monitoring, stock telemetry and refill alerts. Extend pharmacy access to every ward, campus and remote community, 24×7.",
     specs: ["Rx-verified dispensing", "Cold-chain telemetry", "Real-time stock sync", "24×7 unmanned operation"],
+    image: "/images/iot-dispenser.jpg",
+    imageAlt: "Automated medicine dispensing machine with backlit compartments",
   },
   {
     title: "Health Booths & Telehealth Pods",
     body: "Private, connected consultation pods with integrated diagnostic devices and high-definition telemedicine — a clinic-grade experience in malls, factories, campuses and villages.",
     specs: ["Integrated diagnostics", "HD teleconsultation", "Soundproof private pod", "Deploy anywhere footprint"],
+    image: "/images/iot-pod.jpg",
+    imageAlt: "Private telehealth consultation pod with glowing interior",
   },
 ];
 

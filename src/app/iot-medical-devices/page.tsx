@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaSection from "@/components/home/CtaSection";
@@ -60,7 +61,17 @@ export default function IotPage() {
         <div className="mx-auto max-w-7xl space-y-8 px-5 lg:px-8">
           {iotDevices.map((d, i) => (
             <Reveal key={d.title} delay={0.05}>
-              <article className="card grid gap-8 rounded-3xl p-8 md:grid-cols-[1.4fr_1fr] md:p-12">
+              <article className={`card grid gap-8 overflow-hidden rounded-3xl p-8 md:p-12 lg:grid-cols-[1fr_1.1fr_0.9fr] ${i % 2 === 1 ? "lg:[&>*:first-child]:order-3" : ""}`}>
+                <div className="relative min-h-56 overflow-hidden rounded-2xl lg:min-h-full">
+                  <Image
+                    src={d.image}
+                    alt={d.imageAlt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 400px"
+                    className="object-cover object-center transition-transform duration-700 hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#081521]/50 to-transparent" />
+                </div>
                 <div>
                   <span className="font-mono text-xs text-teal">{String(i + 1).padStart(2, "0")}</span>
                   <h2 className="mt-3 font-display text-3xl font-bold tracking-tight">{d.title}</h2>

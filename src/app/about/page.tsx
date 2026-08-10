@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaSection from "@/components/home/CtaSection";
@@ -39,7 +40,18 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
             <Reveal>
-              <div className="card rounded-3xl p-8 md:p-12">
+              <div className="card overflow-hidden rounded-3xl">
+                <div className="relative h-56 w-full md:h-72">
+                  <Image
+                    src="/images/singularity-campus.jpg"
+                    alt="Modern glass innovation campus glowing at night"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 780px"
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#081521]" />
+                </div>
+                <div className="p-8 pt-6 md:p-12 md:pt-8">
                 <h2 className="font-display text-3xl font-bold tracking-tight">From Kolhapur to the world.</h2>
                 <div className="mt-6 space-y-4 leading-relaxed text-ink-dim">
                   <p>
@@ -60,6 +72,7 @@ export default function AboutPage() {
                     to modernise. Software, AI, devices, care platforms — one partner,
                     engineered forward.
                   </p>
+                </div>
                 </div>
               </div>
             </Reveal>
@@ -108,20 +121,44 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2">
             <Reveal>
-              <div className="card h-full rounded-3xl p-8">
-                <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-teal">Corporate HQ · India</p>
-                <h3 className="mt-3 font-display text-2xl font-bold">THE SINGULARITY, Kolhapur</h3>
-                <p className="mt-3 leading-relaxed text-ink-dim">
-                  {site.address.line1}, {site.address.line2},<br />
-                  {site.address.city}, {site.address.region} {site.address.postalCode}, {site.address.country}
-                </p>
+              <div className="card h-full overflow-hidden rounded-3xl">
+                <div className="relative h-44 w-full">
+                  <Image
+                    src="/images/singularity-campus.jpg"
+                    alt="THE SINGULARITY campus at night"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 620px"
+                    className="object-cover object-[center_35%]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#081521]" />
+                </div>
+                <div className="p-8 pt-5">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-teal">Corporate HQ · India</p>
+                  <h3 className="mt-3 font-display text-2xl font-bold">THE SINGULARITY, Kolhapur</h3>
+                  <p className="mt-3 leading-relaxed text-ink-dim">
+                    {site.address.line1}, {site.address.line2},<br />
+                    {site.address.city}, {site.address.region} {site.address.postalCode}, {site.address.country}
+                  </p>
+                </div>
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <div className="card h-full rounded-3xl p-8">
-                <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-teal">Branch Office · UAE</p>
-                <h3 className="mt-3 font-display text-2xl font-bold">Business Bay, Dubai</h3>
-                <p className="mt-3 leading-relaxed text-ink-dim">{site.branch}</p>
+              <div className="card h-full overflow-hidden rounded-3xl">
+                <div className="relative h-44 w-full">
+                  <Image
+                    src="/images/dubai.jpg"
+                    alt="Dubai Business Bay skyline at night"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 620px"
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#081521]" />
+                </div>
+                <div className="p-8 pt-5">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-teal">Branch Office · UAE</p>
+                  <h3 className="mt-3 font-display text-2xl font-bold">Business Bay, Dubai</h3>
+                  <p className="mt-3 leading-relaxed text-ink-dim">{site.branch}</p>
+                </div>
               </div>
             </Reveal>
           </div>
