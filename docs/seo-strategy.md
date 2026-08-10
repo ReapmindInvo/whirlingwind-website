@@ -36,6 +36,22 @@ Medium-term (6–12 months + backlinks): healthcare AI development company, tele
 4. **Production-proof AI** — vs. lab-demo AI vendors ("Not a lab experiment. Production AI, in clinics today.").
 5. **Category geography** — "agentic AI for Indian & GCC hospitals" (Innovaccer's narrative, unclaimed geography).
 
+## Health Information Management (HIM) — USA-targeted pillar + cluster (added Aug 2026)
+
+Modeled competitively against AM Infoweb (aminfoweb.com), plus enterprise ROI players (Datavant/Ciox, MRO, ScanSTAT/Verisma) and India-BPO HIM providers (Outsource2india, Flatworld, NeoWork). Structured as one hub page + six USA-targeted spoke pages (pillar-cluster SEO silo), each with its own `Service` + `FAQPage` + `BreadcrumbList` schema and cross-links to the other five.
+
+| Page | Primary keywords | Secondary keywords |
+|---|---|---|
+| /health-information-management (hub) | health information management services, HIM outsourcing company | healthcare BPO India |
+| /health-information-management/release-of-information | release of information outsourcing, ROI outsourcing services USA | HIPAA compliant release of information, medical records release service, ROI requestor support |
+| /health-information-management/medical-record-retrieval-litigation-support | medical record retrieval company USA, litigation support medical records | subrogation record retrieval, workers comp record retrieval, e-discovery medical records |
+| /health-information-management/clinical-coding-cdi | clinical coding outsourcing USA, medical coding outsourcing company | CDI outsourcing services, ICD-10 coding support, denial reduction coding |
+| /health-information-management/revenue-cycle-payer-support | revenue cycle management outsourcing USA, payer support services healthcare | denial management outsourcing, prior authorization support, claims processing outsourcing |
+| /health-information-management/ai-human-contact-center | healthcare contact center outsourcing USA, HIM call center services | AI voice contact center healthcare, medical records call center |
+| /health-information-management/compliance-audit-data-governance | HIPAA compliance services healthcare, healthcare data governance outsourcing | HIM audit services, breach risk assessment healthcare, medical record retention compliance |
+
+Positioning: "the team that builds careup.ai also runs the human+AI layer managing the records inside it" — a differentiator no pure-BPO or pure-software competitor can claim. Real credentials used (ISO 27001, SOC 2 Type II); other metrics (turnaround SLA, client count, delivery hubs) are deliberately modest, honest placeholders for an early-stage launch — update once real client data is available.
+
 ## Recommended next content investments (priority order)
 
 1. ABDM pillar page + "ABDM integration for hospitals" guide (KareXpert wins traffic purely on this).

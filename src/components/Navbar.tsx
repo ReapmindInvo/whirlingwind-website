@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "motion/react";
 const links = [
   { href: "/healthcare-ai", label: "Healthcare AI" },
   { href: "/iot-medical-devices", label: "IoT & Devices" },
+  { href: "/health-information-management", label: "HIM Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/careup-ai", label: "careup.ai" },
   { href: "/about", label: "About" },

@@ -25,6 +25,17 @@ const bands = [
     imageAlt: "White health kiosk with glowing screen in a dark hospital lobby",
     items: ["Patient Kiosks & Health ATMs", "Smart Medicine Dispensers", "Health Booths & Telehealth Pods", "Device-to-Cloud Platforms", "ABHA-Linked Reports", "Field Screening Systems"],
   },
+  {
+    id: "him",
+    kicker: "Health Information Management",
+    title: "The team behind your EMR, now running the operations inside it.",
+    body: "Release of information, medical record retrieval, clinical coding and payer support — AI-augmented and co-managed with your team, ISO 27001 & SOC 2 Type II certified.",
+    href: "/health-information-management",
+    cta: "Explore HIM Services",
+    image: "/images/him-flow.jpg",
+    imageAlt: "Streams of luminous document icons flowing into an organized grid",
+    items: ["Release of Information (ROI)", "Record Retrieval & Litigation Support", "Clinical Coding & CDI", "Revenue Cycle & Payer Support", "AI + Human Contact Center", "Compliance & Data Governance"],
+  },
 ];
 
 export default function CapabilityBands() {

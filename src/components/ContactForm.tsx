@@ -8,6 +8,7 @@ const interests = [
   "Healthcare AI / LLMs",
   "careup.ai HMS",
   "IoT & Medical Devices",
+  "Health Information Management",
   "Telemedicine / Platforms",
   "Mental Wellness / EAP",
   "Something else",

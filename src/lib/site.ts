@@ -225,6 +225,46 @@ export const iotDevices = [
   },
 ];
 
+export const him = {
+  name: "Health Information Management",
+  headline: "The team behind your EMR, now running the operations inside it.",
+  summary:
+    "AI-augmented Health Information Management — release of information, medical record retrieval, clinical coding and payer support — co-managed with your team and built by the engineers behind careup.ai.",
+  metrics: [
+    { value: "<24 hrs", label: "average ROI turnaround SLA" },
+    { value: "5+", label: "live client engagements" },
+    { value: "2", label: "delivery hubs — India & UAE" },
+    { value: "24/6", label: "contact center coverage" },
+  ],
+  certifications: ["ISO 27001 Certified", "SOC 2 Type II", "HIPAA Aligned", "DPDP Compliant"],
+  pillars: [
+    {
+      title: "Built by the people who build your EMR",
+      body: "Our HIM desk is run by the same engineers behind careup.ai — meaning tighter integration, faster escalation, and none of the hand-off friction of a third-party vendor.",
+    },
+    {
+      title: "AI-augmented, not AI-branded",
+      body: "The same clinical-NLP and HuntGPT stack live across VKonnect and careup.ai does the first pass on triage, redaction and coding — your team reviews, not re-does.",
+    },
+    {
+      title: "India + GCC delivery",
+      body: "Operating from Kolhapur and Business Bay, Dubai — cost-efficient India delivery with GCC-hours coverage for both US and Gulf healthcare clients.",
+    },
+    {
+      title: "Co-managed, not outsourced-and-forgotten",
+      body: "You keep oversight and SLAs; we bring the trained staff, workflow tooling and AI acceleration — an extension of your team, not a black box.",
+    },
+  ],
+};
+
+export const himProcess = [
+  { step: "Assess", body: "We audit your current ROI turnaround, coding backlog and compliance gaps against HIPAA/DPDP/ABDM standards." },
+  { step: "Design", body: "Co-design workflows, staffing model and SLAs with your HIM and compliance leadership." },
+  { step: "Deploy", body: "Stand up your dedicated desk — AI + trained specialists — integrated with your EMR/HIS or careup.ai." },
+  { step: "Operate", body: "Live operations with SLA-backed turnaround, requestor support and coding throughput from day one." },
+  { step: "Improve", body: "Monthly analytics, audit reviews and continuous workflow tuning as volume scales." },
+];
+
 export const leadership = [
   { name: "Aroof Shaikh", role: "Founder & CEO" },
   { name: "Bhaskar Nallamelli", role: "Head of Business Strategies" },
