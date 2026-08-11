@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { aiServices, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -184,7 +184,7 @@ export default function HealthcareAiPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta source="healthcare-ai" interest="Healthcare AI / LLMs" title="Let's scope your healthcare AI initiative." subtitle="From a first LLM pilot to production copilots across your EMR — tell us your starting point and our AI team will map the route." />
     </>
   );
 }

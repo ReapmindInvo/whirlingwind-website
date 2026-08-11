@@ -5,7 +5,7 @@ import PortfolioStack from "@/components/home/PortfolioStack";
 import CareupSpotlight from "@/components/home/CareupSpotlight";
 import CapabilityBands from "@/components/home/CapabilityBands";
 import TrustSection from "@/components/home/TrustSection";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <CareupSpotlight />
       <CapabilityBands />
       <TrustSection />
-      <CtaSection />
+      <LeadCta source="homepage" title="Let's build the future of healthcare together." subtitle="Whether you run a 50-bed hospital or a multi-country health system — tell us where you're headed and we'll map the fastest route there." />
     </>
   );
 }

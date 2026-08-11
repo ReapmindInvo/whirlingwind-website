@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { brands } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,6 +16,7 @@ export default function PortfolioPage() {
   return (
     <>
       <PageHero
+        image="/images/portfolio-panels.jpg"
         kicker="Service Portfolio"
         title={
           <>
@@ -94,7 +95,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta source="portfolio" title="Want a platform like these for your organisation?" subtitle="Every product in this portfolio started as a conversation. Tell us what you're building and we'll bring the engineering." />
     </>
   );
 }

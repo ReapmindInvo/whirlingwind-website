@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { him, himProcess, site } from "@/lib/site";
 import { himServices } from "@/lib/him-services";
 
@@ -214,7 +214,7 @@ export default function HimPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta source="him-hub" interest="Health Information Management" title="Let's scope your HIM engagement." subtitle="ROI backlog, coding throughput, payer correspondence — tell us where it hurts and we'll come back with an operating model and SLAs." />
     </>
   );
 }

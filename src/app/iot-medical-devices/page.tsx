@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { iotDevices, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -44,6 +44,7 @@ export default function IotPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productsJsonLd) }} />
 
       <PageHero
+        image="/images/iot-lineup.jpg"
         kicker="IoT & Medical Devices"
         title={
           <>
@@ -120,7 +121,7 @@ export default function IotPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta source="iot-medical-devices" interest="IoT & Medical Devices" title="Let's put connected care on the ground." subtitle="Kiosks for your lobby, dispensers for your wards, booths for your campuses — tell us the deployment and we'll quote the fleet." />
     </>
   );
 }

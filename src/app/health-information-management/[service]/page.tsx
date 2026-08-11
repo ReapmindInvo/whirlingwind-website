@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { site } from "@/lib/site";
 import { himServices, getHimService } from "@/lib/him-services";
 
@@ -70,6 +70,7 @@ export default async function HimServicePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <PageHero
+        image="/images/him-flow.jpg"
         kicker={`Health Information Management · ${s.category} · USA`}
         title={s.heroTitle}
         lead={s.heroLead}
@@ -185,7 +186,12 @@ export default async function HimServicePage({
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta
+        source={`him-${s.slug}`}
+        interest="Health Information Management"
+        title={`Let's scope your ${s.category.toLowerCase()} engagement.`}
+        subtitle="Tell us your current volume and turnaround targets — we'll come back with an operating model, staffing plan and SLAs within one business day."
+      />
     </>
   );
 }

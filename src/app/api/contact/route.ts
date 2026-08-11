@@ -18,7 +18,15 @@ export async function POST(request: Request) {
 
   // TODO: wire to your CRM / email provider (e.g. Resend, SES, HubSpot).
   // Kept provider-agnostic so credentials never live in the repo.
-  console.log("[contact]", { name, email, organisation: body.organisation, interest: body.interest, message });
+  console.log("[contact]", {
+    name,
+    email,
+    phone: body.phone,
+    organisation: body.organisation,
+    interest: body.interest,
+    source: body.source,
+    message,
+  });
 
   return NextResponse.json({ ok: true });
 }

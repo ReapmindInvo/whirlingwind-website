@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import CtaSection from "@/components/home/CtaSection";
+import LeadCta from "@/components/LeadCta";
 import { careup, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -167,7 +167,7 @@ export default function CareupPage() {
         </div>
       </section>
 
-      <CtaSection />
+      <LeadCta source="careup-ai" interest="careup.ai HMS" title="See careup.ai on your hospital's workflows." subtitle="A 30-minute demo scoped to your departments and bed count — with implementation timelines from 300+ go-lives." />
     </>
   );
 }

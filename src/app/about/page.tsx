@@ -23,6 +23,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
+        image="/images/about-team.jpg"
         kicker="About WhirlingWind"
         title={
           <>
