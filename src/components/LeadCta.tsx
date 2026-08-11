@@ -38,7 +38,7 @@ export default function LeadCta({
   }
 
   return (
-    <section className="relative overflow-hidden border-t border-[var(--line)] py-24 lg:py-32">
+    <section id="lead-form" className="relative scroll-mt-24 overflow-hidden border-t border-[var(--line)] py-24 lg:py-32">
       <div className="halo absolute inset-0" />
       <div className="grid-lines absolute inset-0" />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">

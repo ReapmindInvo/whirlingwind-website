@@ -70,17 +70,31 @@ export default async function HimServicePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <PageHero
-        image="/images/him-flow.jpg"
+        image={s.heroImage}
         kicker={`Health Information Management · ${s.category} · USA`}
         title={s.heroTitle}
         lead={s.heroLead}
       />
 
-      {/* breadcrumb */}
+      {/* above-the-fold CTA row + breadcrumb */}
       <section className="pb-4">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <Reveal>
-            <nav className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                href="#lead-form"
+                className="btn-primary rounded-full px-7 py-3.5 font-display font-semibold"
+              >
+                {s.offer.button}
+              </Link>
+              <Link
+                href="/contact"
+                className="btn-ghost rounded-full px-7 py-3.5 font-display font-semibold text-ink"
+              >
+                Talk to our HIM team
+              </Link>
+            </div>
+            <nav className="mt-8 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-ink-faint">
               <Link href="/health-information-management" className="hover:text-teal">
                 Health Information Management
               </Link>
@@ -134,8 +148,42 @@ export default async function HimServicePage({
         </div>
       </section>
 
+      {/* strategic offer band */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <Reveal>
+            <div className="card relative overflow-hidden rounded-3xl p-8 md:p-12">
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background:
+                    "radial-gradient(600px 300px at 85% 20%, rgba(255,255,255,0.06), transparent 60%)",
+                }}
+              />
+              <div className="relative grid items-center gap-8 lg:grid-cols-[1.4fr_auto]">
+                <div>
+                  <p className="font-mono text-[12px] uppercase tracking-[0.24em] text-teal">
+                    {s.offer.kicker}
+                  </p>
+                  <h2 className="mt-3 max-w-2xl font-display text-2xl font-bold tracking-tight md:text-4xl">
+                    {s.offer.title}
+                  </h2>
+                  <p className="mt-4 max-w-2xl leading-relaxed text-ink-dim">{s.offer.body}</p>
+                </div>
+                <Link
+                  href="#lead-form"
+                  className="btn-primary justify-self-start rounded-full px-8 py-4 font-display font-semibold lg:justify-self-end"
+                >
+                  {s.offer.button} →
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-24">
+      <section className="border-t border-[var(--line)] py-24">
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">

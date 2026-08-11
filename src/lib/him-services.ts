@@ -6,12 +6,14 @@ export type HimService = {
   tags: string[];
   heroTitle: string;
   heroLead: string;
+  heroImage: string;
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
   whatIncluded: string[];
   whyPoints: { title: string; body: string }[];
   faqs: { q: string; a: string }[];
+  offer: { kicker: string; title: string; body: string; button: string };
 };
 
 export const himServices: HimService[] = [
@@ -25,6 +27,7 @@ export const himServices: HimService[] = [
     heroTitle: "Release of Information, handled the way US compliance teams expect.",
     heroLead:
       "A dedicated, HIPAA-compliant ROI desk for US hospitals, clinics and health systems — authorization validation, PHI-safe redaction and requestor support for patients, attorneys, insurers and other providers, with AI-assisted triage cutting turnaround time.",
+    heroImage: "/images/him-roi.jpg",
     metaTitle: "Release of Information (ROI) Outsourcing Services | USA",
     metaDescription:
       "HIPAA-compliant Release of Information outsourcing for US hospitals & health systems — authorization review, PHI-safe redaction, and a dedicated requestor desk.",
@@ -54,6 +57,7 @@ export const himServices: HimService[] = [
       { q: "Can you handle attorney and subpoena-based record requests?", a: "Yes, our ROI desk routes legal requests — attorney authorizations, subpoenas, litigation holds — through a dedicated legal-request track with chain-of-custody documentation." },
       { q: "How fast is turnaround for standard ROI requests?", a: "Our SLA targets sub-24-hour turnaround for standard requests, with expedited handling available for urgent or legally time-bound deadlines." },
     ],
+    offer: { kicker: "Free assessment", title: "Get a free ROI backlog & turnaround assessment.", body: "Send us your current request volume and average turnaround — we'll benchmark it against our <24-hour SLA and show you exactly where the time is going. No commitment, one business day.", button: "Request my free assessment" },
   },
   {
     slug: "medical-record-retrieval-litigation-support",
@@ -65,6 +69,7 @@ export const himServices: HimService[] = [
     heroTitle: "Medical records, retrieved and certified for the courtroom.",
     heroLead:
       "End-to-end sourcing, compilation and certification of medical records for US law firms, insurers and auditors — built for subrogation, workers'-compensation and litigation timelines, with full chain-of-custody documentation.",
+    heroImage: "/images/him-litigation.jpg",
     metaTitle: "Medical Record Retrieval & Litigation Support Services | USA",
     metaDescription:
       "US-focused medical record retrieval for law firms, insurers & auditors — chain-of-custody tracked, e-discovery ready, subrogation & workers'-comp support.",
@@ -94,6 +99,7 @@ export const himServices: HimService[] = [
       { q: "Do you support subrogation and workers'-compensation record retrieval?", a: "Yes, this is a core focus area — we understand the specific documentation and timeline requirements for subrogation and workers'-comp cases." },
       { q: "Is the output e-discovery ready?", a: "Yes, records are formatted, indexed and Bates-numbered on request for direct use in e-discovery platforms." },
     ],
+    offer: { kicker: "Pilot case", title: "Test us on one live case — see the difference.", body: "Give us one active retrieval matter — subrogation, workers'-comp or litigation — and we'll run it end-to-end with full chain-of-custody documentation, so you can judge speed and rigor on real work.", button: "Start a pilot case" },
   },
   {
     slug: "clinical-coding-cdi",
@@ -105,6 +111,7 @@ export const himServices: HimService[] = [
     heroTitle: "Cleaner charts. Fewer denials. Coding done right the first time.",
     heroLead:
       "ICD-10-CM and CPT coding support plus clinical documentation improvement (CDI) for US hospitals and physician groups — accelerated by our healthcare NLP models, reviewed by trained coding specialists, built to reduce denials.",
+    heroImage: "/images/him-coding.jpg",
     metaTitle: "Clinical Coding & CDI Outsourcing Services | USA",
     metaDescription:
       "ICD-10-CM & CPT coding support plus clinical documentation improvement for US providers — AI-assisted chart abstraction that reduces denials.",
@@ -134,6 +141,7 @@ export const himServices: HimService[] = [
       { q: "How does AI-assisted coding maintain accuracy?", a: "AI performs first-pass abstraction and code suggestions; every chart is reviewed and finalized by a trained coding specialist before submission." },
       { q: "Can this help reduce our denial rate?", a: "Yes — we run denial-pattern analysis against coding and documentation gaps, feeding findings back into a CDI query workflow to address root causes." },
     ],
+    offer: { kicker: "Free audit", title: "Get a free coding-accuracy audit on 50 charts.", body: "Send a de-identified sample and our coding team will audit accuracy, flag denial-risk patterns and quantify the revenue you're leaving on the table — before you commit to anything.", button: "Request my free audit" },
   },
   {
     slug: "revenue-cycle-payer-support",
@@ -145,6 +153,7 @@ export const himServices: HimService[] = [
     heroTitle: "Revenue cycle support that closes the loop with payers.",
     heroLead:
       "Claims support, denial management, prior-authorization coordination and payer correspondence for US hospitals, physician groups and payers — integrated directly with careup.ai or your existing HIS.",
+    heroImage: "/images/him-revenue.jpg",
     metaTitle: "Revenue Cycle & Payer Support Outsourcing | USA",
     metaDescription:
       "Claims support, denial management & prior-auth coordination for US hospitals & payers — an operational layer that plugs into your existing HIS or careup.ai.",
@@ -174,6 +183,7 @@ export const himServices: HimService[] = [
       { q: "Can this integrate with our existing billing system, not just careup.ai?", a: "Yes — the revenue cycle support layer is built to integrate with HL7/FHIR-compliant HIS and billing systems generally." },
       { q: "How do you help reduce denials, not just process them?", a: "We analyze denial patterns and feed findings back into coding and documentation workflows, addressing root causes rather than only managing appeals." },
     ],
+    offer: { kicker: "Denial analysis", title: "Get a free denial-pattern analysis.", body: "Share 90 days of denial data and we'll map the root causes — coding gaps, documentation issues, payer quirks — and show the recovery opportunity in dollar terms.", button: "Analyze my denials" },
   },
   {
     slug: "ai-human-contact-center",
@@ -185,6 +195,7 @@ export const himServices: HimService[] = [
     heroTitle: "Every call answered. Every escalation handled by a real specialist.",
     heroLead:
       "A hybrid contact center for US healthcare HIM operations — AI voice and chat handling routine ROI-status and record-request queries, with trained human agents for escalations, covering patients, law firms, insurers and internal staff.",
+    heroImage: "/images/him-contact.jpg",
     metaTitle: "AI + Human HIM Contact Center Services | USA",
     metaDescription:
       "A hybrid AI-voice and human contact center for US healthcare HIM operations — ROI status, record requests and payer queries, covered around the clock.",
@@ -214,6 +225,7 @@ export const himServices: HimService[] = [
       { q: "What hours does the contact center cover for US clients?", a: "We structure coverage around US business hours plus extended windows, using our India-based delivery hours to reduce off-hours staffing costs for you." },
       { q: "Is call and chat data handled in compliance with HIPAA?", a: "Yes, all interactions are logged, access-controlled and handled under HIPAA-aligned data protection protocols." },
     ],
+    offer: { kicker: "Live demo", title: "Hear the AI + human desk handle a real call.", body: "Book a 20-minute walkthrough where we run live sample calls — routine ROI status through the AI layer, a complex attorney request through a human agent — so you hear exactly what your requestors would.", button: "Book the live demo" },
   },
   {
     slug: "compliance-audit-data-governance",
@@ -225,6 +237,7 @@ export const himServices: HimService[] = [
     heroTitle: "Compliance built into the workflow, not bolted on after.",
     heroLead:
       "HIPAA-aligned audit trails, breach-risk reviews and retention governance for every record that moves through your HIM operation — backed by our own ISO 27001 and SOC 2 Type II certification.",
+    heroImage: "/images/him-compliance.jpg",
     metaTitle: "HIM Compliance, Audit & Data Governance Services | USA",
     metaDescription:
       "HIPAA-aligned audit trails, breach-risk reviews and retention governance for US healthcare HIM operations — ISO 27001 & SOC 2 Type II certified.",
@@ -254,6 +267,7 @@ export const himServices: HimService[] = [
       { q: "Do you help with medical record retention requirements?", a: "Yes, we help design and govern retention schedules aligned to applicable state and federal requirements for your organization." },
       { q: "Can you support us during an external compliance audit?", a: "Yes, our audit trails and compliance reporting are structured to support internal reviews and external regulatory or payer audits." },
     ],
+    offer: { kicker: "Gap review", title: "Get a complimentary HIPAA gap review.", body: "A structured review of your current HIM audit trails, access controls and retention schedules against HIPAA requirements — delivered as a prioritized findings memo you keep either way.", button: "Request my gap review" },
   },
 ];
 
